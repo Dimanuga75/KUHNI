@@ -1,11 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* @import url("fonts/Montserrat/stylesheet.css") */
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-color: #fff;
     
+    color: #1a1a1a;
+    font-size: 18px;
+    line-height: 1.55;
+    margin-top: 23px;
+}
+h1{
+    
+    font-size: 30px;
+    font-weight: 200px;
+    }
+h2{
+    
+    font-size: 24px;
+    color: #1a1a1a;
+}
+.wrapper{
+    width: 1140px;
+    margin: 0 auto; 
+}
+.top-header{
+    color: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+}
+.top-header > div:nth-child(3){
+    align-self: flex-start;
+}
+.top-header_img{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 560px;
+    align-items: center;
+}
+
+.topText{
+    margin-right: 20px;
+  }
+
+.zagolovok{
+  width: 960px; 
+  padding-top: 80px;
+}
+.zagolovok_mini{
+    width: 960px;
+    margin-top: -330px;
+   }
+ .spisok{
+     display: flex;
+     margin-top: 20px;
+ }  
+ .zagolovok_mini_mini{
+    width: 820px;
+    margin-top: 20px;
+    font-size: 18px;
+ }
+ .tildaflash {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    text-decoration: none;
+    background-color: #f11727;
+    width: 580px;
+    height: 90px;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top: 30px;
+    border: #f11727;
+    cursor: pointer;
+}
+
+    
+  .flash_wrap-effects {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateX(-85px);
+    -ms-transform: translateX(-85px);
+    transform: translateX(-85px);
+    -webkit-animation-name: tildaflash;
+    animation-name: tildaflash;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+ .flash_effects {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, .1)), to(rgba(255, 255, 255, .4)));
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, .1), rgba(255, 255, 255, .4));
+    background: -o-linear-gradient(left, rgba(255, 255, 255, .1), rgba(255, 255, 255, .4));
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .4));
+    width: 45px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    -webkit-transform: skewX(-45deg);
+    -ms-transform: skewX(-45deg);
+    transform: skewX(-45deg);
+}
+
+@-webkit-keyframes tildaflash {
+  20% {
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+  }
+  100% {
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+  }
+}
+
+@keyframes
+	tildaflash{
+	20% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+	100% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+	}
+ .form-popup {
+     display: none;
+     position: fixed;
+     z-index: 1;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+     background-color: rgba(0,0,0, 0.4);
+ }   
+ .modal_active {
+     display: block;
+ }
+.modal_content{
+    background-color: #fff;
+    width: 60%;
+    padding: 3rem;
+    border: 1px solid #ccc;
+    margin: 15% auto 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2) 0.6;
+    text-align: center;
+}
+.modal_close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.modal_close:hover,
+.modal_close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal_button{
+    display: flex;
+    justify-content: space-between;
+}
+.forvard{
+    border: 0;
+    text-decoration: none;
+    border-radius: 5px;
+    background: #f11727;
+    color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 14px;
+    height: 45px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.back{
+    border: 0;
+    text-decoration: none;
+    border-radius: 5px;
+    background: #dcdcdc;
+    color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 14px;
+    height: 45px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.quest2 .quest1{
+    display: none;
+}
+    </style>    
     <title>Document</title>
     </head>
     <body>
