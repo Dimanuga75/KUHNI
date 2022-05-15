@@ -480,26 +480,6 @@ h2{
 .checkbox__text a{
 color: #296c00;
 }
-/* .checkbox__text::after{
-   content: "";
-   width: 20px;
-   height: 20px;
-   background-image: url(image/check.svg);
-   background-repeat: no-repeat;
-   background-size: cover;
-   position: absolute;
-   top: -4px;
-   left: -3px;
-   cursor: pointer;
-   transform: scale(0);
-   transition: transform 0.3s ease 0s;
-}
-.checkbox__input:checked + .checkbox__text::after{
-   transform: scale(1);
-}
-.options__phone{
-   position: relative;
-} */
 .checkbox__input:checked + .check__box{
    transform: scale(1);}
 .check__box{
@@ -527,6 +507,9 @@ color: #296c00;
 .img__check{
    width: 20px;
    height: 20px;
+}
+.options__phone{
+   position: relative;
 }
 .options__phone::after{
    content: 'Обязательное поле';
