@@ -379,9 +379,6 @@ h2{
    transition: transform 0.3s ease 0s;
 }
 
-/* .options__input:checked + .options__text::before{
-   transform: scale(1);
-} */
 .options__input:checked + .options__text4::after{
    transform: scale(1);
 }
@@ -391,28 +388,11 @@ h2{
    margin-top: 20px;
 }
 
-/* .options__input_2:checked + .options__text_2::before{
-   transform: scale(1);
-} */
 .options__text_2{
    font-size: 14px;
    width: 150px;
 }
 
-/* .options__text_2::before{
-   content: '';
-   width: 20px;
-   height: 20px;
-   background-image: url(/image/check.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-   position: absolute;
-   margin-left: 0px;
-   margin-top: -7px;
-   border-radius: 50%;
-   background-color: red;
-   transform: scale(0);
-} */
  .chekbox{
     margin-top: 35px;
  }
@@ -455,8 +435,7 @@ h2{
       display: flex;
       justify-content: center;
    }
-.checkbox__input
-{
+.checkbox__input{
    display: none;
 } 
 
