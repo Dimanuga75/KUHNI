@@ -484,7 +484,7 @@ color: #296c00;
    content: "";
    width: 20px;
    height: 20px;
-   background-image: url(/image/check.svg);
+   background-image: url(image/check.svg);
    background-repeat: no-repeat;
    background-size: cover;
    position: absolute;
