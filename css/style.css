@@ -291,9 +291,10 @@ h2{
 }
 .options1{
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
    flex-wrap: wrap;
    overflow: hidden auto;
+   margin-left: 10px;
  }
 
  .modal_close {
@@ -326,6 +327,7 @@ h2{
 .options__items{
    margin-top: 20px;
    width: 150px;
+ margin-right: 10px;
 }
 .options__text::before{
    content: '';
