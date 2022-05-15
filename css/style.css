@@ -480,7 +480,7 @@ h2{
 .checkbox__text a{
 color: #296c00;
 }
-.checkbox__text::after{
+/* .checkbox__text::after{
    content: "";
    width: 20px;
    height: 20px;
@@ -499,6 +499,34 @@ color: #296c00;
 }
 .options__phone{
    position: relative;
+} */
+.checkbox__input:checked + .check__box{
+   transform: scale(1);}
+.check__box{
+   width: 20px;
+   height: 20px;
+   position: absolute;
+   margin-left: 162px;
+   margin-top: 2px;
+   transform: scale(0);
+   transition: transform 0.3s ease 0s;
+   z-index: 0;   
+}
+@media(max-width: 991.98px){
+   .check__box{
+   margin-left: 97px;}
+}
+@media(max-width: 767.98px){
+   .check__box{
+   margin-left: 42px;}
+}
+@media(max-width: 479.98px){
+   .check__box{
+   margin-left: 22px;}
+}
+.img__check{
+   width: 20px;
+   height: 20px;
 }
 .options__phone::after{
    content: 'Обязательное поле';
