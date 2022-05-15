@@ -331,7 +331,7 @@ h2{
    content: '';
    width: 26px;
    height: 26px;
-   background-image: url(/image/check.png);
+   background-image: url(image/check.png);
    background-repeat: no-repeat;
    background-size: cover;
    position: absolute;
